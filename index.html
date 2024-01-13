@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>My Learning Journal</title>
+    </head>
+    <body>
+        <header>
+            <div class="container flex">
+                <a class="logo-title" href="/index.html">
+                    <img class="logo" src="images/logo.png"><!-- ideally this would be an svg -->
+                    <span class="logo-text">My Learning Journal</span>
+                </a>
+                <nav class="main-nav">
+                    <ul class="nav-container">
+                        <li class="nav-item">Home</li>
+                        <li class="nav-item">About Me</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="hero" role="img" aria-label="A laptop with code on screen sitting on a desk in front of a window with the sun setting in the background">
+            <div class="container">
+                <article class="main-article">
+                    <h1 class="main-title">My new journey as a bootcamp student.</h1>
+                    <time datetime="2022-07-23" pubdate="pubdate">July 23, 2022</time>
+                    <p class="main-snippet">
+                        After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.
+                    </p>
+                </article>
+            </div>
+        </main>
+        <section class="other-articles" aria-live="polite">
+            <div class="container">
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="/article.html">
+                            <img src="images/article2.png" alt="A laptop with code on screen next to a small plant">
+                            <h2 class="article-item-title">Blog one</h2>
+                            <time datetime="2022-07-23" pubdate="pubdate">July 23, 2022</time>
+                            <p class="article-item-snippet">
+                                I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="">
+                            <img src="article3.png" alt="A hand holding a lightbulb in front of a gradient sky" class="article-item-img">
+                            <h2 class="article-item-title">Blog two</h2>
+                            <time datetime="2022-07-23" pubdate="pubdate">July 23, 2022</time>
+                            <p class="article-item-snippet">
+                                I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="">
+                            <img src="article4.png" alt="A laptop with text 'I design and develop experiences that make people's lives simple'" class="article-item-img">
+                            <h2 class="article-item-title">Blog three</h2>
+                            <time datetime="2022-07-23" pubdate="pubdate">July 23, 2022</time>
+                            <p class="article-item-snippet">
+                                I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <button class="text-btn view-more-btn" id="view-more">View More</button>
+            </div>
+        </section>
+        <footer>
+            <p class="footer-name">My Learning Journal</p>
+            <small>&copy; Copyright 2022</small>
+        </footer>
+    </body>
+</html>
