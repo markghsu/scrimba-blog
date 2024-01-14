@@ -8,6 +8,9 @@ body {
     font-family: 'Source Sans 3', sans-serif;
     background: #FFF;
     color: #090909;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -25,8 +28,9 @@ a {
 .container {
     margin: 0 auto;
     /* LEAVE SPACE BETWEEN CONTENT AND SCREEN, EVEN ON VERY NARROW DEVICES */
-    width: calc(100vw - 20px);
-    max-width: 375px;
+    width: calc(100vw - 40px);
+    max-width: 980px;
+    min-width: 300px;
 }
 
 .flex {
@@ -61,7 +65,7 @@ time {
 /** HEADER & NAV **/
 .logo {
     height: 24px;
-    margin: 4px;
+    margin: 3px;
 }
 
 .logo-text {
@@ -90,7 +94,7 @@ time {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #333333;
+    color: #555555;
 }
 
 /** HERO **/
@@ -98,7 +102,7 @@ time {
     background-color: #0000004F;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%), url("./images/main1.png");
     background-size: cover;
-    background-position: bottom center;
+    background-position: center bottom;
     color: #FFF;
 }
 
@@ -107,6 +111,7 @@ time {
     flex-direction: column;
     padding: 6em 0 0;
     width: 100%;
+    max-width: 620px;
 }
 
 .main-date {
@@ -169,9 +174,45 @@ footer {
     font-size: 0.75rem;
     padding: 3em;
     text-align: center;
+    margin: auto 0 0;
 }
 
 .footer-name {
     margin: 0;
     font-weight: 700;
+}
+
+@media screen and (min-width: 760px) {
+    .container {
+        width: calc(100vw - 50px);
+    }
+
+    .hero {
+        background-position: center 75%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-article {
+        padding: 18em 0 3.75em;
+    }
+
+    .main-date {
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 35px;
+        margin: 4px;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
 }
